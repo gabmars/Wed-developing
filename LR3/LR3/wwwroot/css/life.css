@@ -1,0 +1,23 @@
+#life {
+    width: 800px;
+    height: 800px;
+    border: 3px solid black;
+    margin: 40px;
+}
+
+#start {
+    width: 200px;
+    height: 50px;
+}
+#clear {
+    width: 200px;
+    height: 50px;
+}
+#stop {
+    width: 200px;
+    height: 50px;
+}
+#log {
+    font-size: 40px;
+    font-weight: bold;
+}

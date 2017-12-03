@@ -1,0 +1,11 @@
+C:\Users\gabma\source\repos\LR2\LR2\bin\Debug\netcoreapp2.0\LR2.deps.json
+C:\Users\gabma\source\repos\LR2\LR2\bin\Debug\netcoreapp2.0\LR2.runtimeconfig.json
+C:\Users\gabma\source\repos\LR2\LR2\bin\Debug\netcoreapp2.0\LR2.runtimeconfig.dev.json
+C:\Users\gabma\source\repos\LR2\LR2\bin\Debug\netcoreapp2.0\LR2.dll
+C:\Users\gabma\source\repos\LR2\LR2\obj\Debug\netcoreapp2.0\LR2.csprojResolveAssemblyReference.cache
+C:\Users\gabma\source\repos\LR2\LR2\obj\Debug\netcoreapp2.0\LR2.csproj.CoreCompileInputs.cache
+C:\Users\gabma\source\repos\LR2\LR2\obj\Debug\netcoreapp2.0\LR2.AssemblyInfoInputs.cache
+C:\Users\gabma\source\repos\LR2\LR2\obj\Debug\netcoreapp2.0\LR2.AssemblyInfo.cs
+C:\Users\gabma\source\repos\LR2\LR2\bin\Debug\netcoreapp2.0\LR2.pdb
+C:\Users\gabma\source\repos\LR2\LR2\obj\Debug\netcoreapp2.0\LR2.dll
+C:\Users\gabma\source\repos\LR2\LR2\obj\Debug\netcoreapp2.0\LR2.pdb

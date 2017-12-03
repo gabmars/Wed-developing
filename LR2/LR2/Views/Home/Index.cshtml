@@ -1,0 +1,1104 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<environment include="Development">
+    <link rel="stylesheet" href="~/css/index.css" />
+</environment>
+
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+      xmlns:o="urn:schemas-microsoft-com:office:office"
+      xmlns:w="urn:schemas-microsoft-com:office:word"
+      xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+      xmlns="http://www.w3.org/TR/REC-html40">
+
+<body lang=RU link=blue vlink="#954F72" style='tab-interval:35.4pt'>
+
+    <div class=WordSection1>
+
+        <p class=MsoNormal>
+            <span class=SpellE>
+                <b style='mso-bidi-font-weight:normal'>
+                    <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>Canvas</span>
+                </b>
+            </span><b style='mso-bidi-font-weight:
+normal'>
+                <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span>
+            </b>
+        </p>
+
+        <p class=MsoNormal>
+            <span class=SpellE>
+                <span style='font-size:18.0pt;line-height:
+107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Canvas</span>
+            </span><span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>
+                &nbsp;— это новый элемент HTML5, который
+                предназначен для создания растрового изображения при помощи <span class=SpellE>JavaScript</span>.
+                Текст внутри тега будет проигнорирован браузером с поддержкой&nbsp;<span class=SpellE>canvas</span>&nbsp;и показан в браузере без поддержки&nbsp;<span class=SpellE>canvas</span>.<o:p></o:p>
+            </span>
+        </p>
+        <pre><code>
+&lt;canvas id="test" width="500" height="500"&gt;
+    Здесь можно указать текст для тех,
+    у кого не поддерживается тег canvas
+&lt;/canvas&gt;
+</code></pre>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                У тега есть два атрибута —&nbsp;<span class=SpellE>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <i style='mso-bidi-font-style:
+normal'>height</i>
+                    </b>
+                </span>&nbsp;(высота) и&nbsp;<span class=SpellE>
+                    <b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>width</i></b>
+                </span>&nbsp;(ширина).
+                Если размеры не указать, то по умолчанию размер холста будет равен 150х300
+                пикселей. Атрибуты не имеют отношения к CSS, они обозначают ширину и
+                высоту&nbsp;<span class=SpellE>canvas</span>&nbsp;в пикселях не на экране, а на
+                координатной плоскости холста. Не рекомендуется использовать CSS для установки
+                высоты и ширины холста, так как в этом случае&nbsp;<span class=SpellE>canvas</span>&nbsp;подвергнется
+                масштабированию. Задавайте размеры в элементе.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Также требуется установить
+                обязательный идентификатор для обращения к элементу в <span class=SpellE>JavaScript</span>.
+                На веб-страницу можно добавить несколько <span class=SpellE>canvas</span>.
+                Единственное требование чтобы каждый <span class=SpellE>canvas</span> имел свой
+                идентификатор, иначе на странице все <span class=SpellE>canvas</span> будут
+                одинаковые. Чтобы на странице появился <span class=SpellE>canvas</span>, нужно
+                ссылаться на <span class=SpellE>canvas</span> в&nbsp;контексте. Контекст открывает
+                доступ к 2D свойствам и методам, которые позволяют рисовать и манипулировать
+                изображениями, видео, аудио, текстом в <span class=SpellE>canvas</span>.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <b style='mso-bidi-font-weight:normal'>
+                <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>
+                    Разница между <span class=SpellE>Canvas</span>
+                    и SVG<o:p></o:p>
+                </span>
+            </b>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Важно понимать разницу между
+                элементами&nbsp;<span class=SpellE>Canvas</span> и SVG. Векторная графика SVG —
+                это файл XML. Как к SVG так, как и к <span class=SpellE>Canvas</span> можно
+                применить стили CSS и добавлять динамическое поведение с помощью SVG DOM. <span class=SpellE>Canvas</span> рисует графику и формы через <span class=SpellE>JavaScript</span>,
+                и также принимает стили&nbsp;CSS и динамическое поведение.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>Преимущества</span><span lang=EN-US
+                                                                  style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US'>Canvas</span><span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'><o:p></o:p></span>
+        </p>
+
+        <p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt;mso-list:l3 level1 lfo9'>
+            <![if !supportLists]><span style='font-size:18.0pt;line-height:107%;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'>
+                <span style='mso-list:Ignore'>
+                    ·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </span>
+            </span><![endif]><span class=SpellE>
+                <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>Canvas</span>
+            </span><span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>быстрее при составлении сложной графики.<o:p></o:p></span>
+        </p>
+
+        <p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;mso-list:l3 level1 lfo9'>
+            <![if !supportLists]><span style='font-size:18.0pt;line-height:107%;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'>
+                <span style='mso-list:Ignore'>
+                    ·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </span>
+            </span><![endif]><span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>
+                Вы можете сохранять изображение из SVG, из <span class=SpellE>canvas</span> не получится.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt;mso-list:l3 level1 lfo9'>
+            <![if !supportLists]><span style='font-size:18.0pt;line-height:107%;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'>
+                <span style='mso-list:Ignore'>
+                    ·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </span>
+            </span><![endif]><span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>
+                Весь <span class=SpellE>canvas</span> состоит
+                из пикселей.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>Преимущества SVG.<o:p></o:p></span>
+        </p>
+
+        <p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt;mso-list:l4 level1 lfo10'>
+            <![if !supportLists]><span style='font-size:18.0pt;line-height:107%;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'>
+                <span style='mso-list:Ignore'>
+                    ·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </span>
+            </span><![endif]><span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>
+                SVG не зависит от разрешения, он
+                масштабируемый для разных разрешений экрана.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;mso-list:l4 level1 lfo10'>
+            <![if !supportLists]><span style='font-size:18.0pt;line-height:107%;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'>
+                <span style='mso-list:Ignore'>
+                    ·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </span>
+            </span><![endif]><span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>
+                SVG — это файл XML, и предназначен для
+                различных элементов.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt;mso-list:l4 level1 lfo10'>
+            <![if !supportLists]><span style='font-size:18.0pt;line-height:107%;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'>
+                <span style='mso-list:Ignore'>
+                    ·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </span>
+            </span><![endif]><span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>SVG хорошо использовать при сложной анимации.<o:p></o:p></span>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Если графика зависит от разрешения,
+                тогда выбираем SVG. Если вы разрабатываете игру и хотите сделать графику очень
+                быстрой, или не хотите иметь дело с большим количеством файлов XML, тогда
+                выбираем <span class=SpellE>Canvas</span>.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <span class=SpellE>
+                <b style='mso-bidi-font-weight:normal'>
+                    <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>Canvas</span>
+                </b>
+            </span><b style='mso-bidi-font-weight:
+normal'>
+                <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>и аппаратное ускорение<o:p></o:p></span>
+            </b>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                В более ранних версиях браузеров,
+                рендеринг графики, как и большинство ресурсоёмких задач было возложено на CPU.
+                Современные браузеры были переделаны в этой области, путем перевода графических
+                ресурсоёмких задач на GPU, графический процессор для графики использует&nbsp;<b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>Direct2D</i></b>&nbsp;и&nbsp;<span class=SpellE>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <i style='mso-bidi-font-style:
+normal'>DirectWrite</i>
+                    </b>
+                </span>. Что ускоряет обработку графики и облегчает
+                нагрузку на центральный процессор CPU.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <span class=SpellE>
+                <b style='mso-bidi-font-weight:normal'>
+                    <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>Canvas</span>
+                </b>
+            </span><b style='mso-bidi-font-weight:
+normal'>
+                <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>2D API<o:p></o:p></span>
+            </b>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Объект <span class=SpellE>canvas</span>
+                2D API позволяет рисовать и манипулировать графикой внутри элемента <span class=SpellE>canvas</span>. Для ссылки на контекст <span class=SpellE>canvas</span>
+                используется метод&nbsp;<span class=SpellE>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <i style='mso-bidi-font-style:normal'>getContext</i>
+                    </b>
+                </span>.<o:p></o:p>
+            </span>
+        </p>
+        <pre class=" language-js" role="doc-example"><code class="js language-js" itemprop="text"><span class="token keyword">var</span> myCanvas <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"myCanvas"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> context <span class="token operator">=</span> myCanvas<span class="token punctuation">.</span><span class="token function">getContext</span><span class="token punctuation">(</span><span class="token string">"2d"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>
+</pre>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                В&nbsp;<span class=SpellE>
+                    <b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>getContext</i></b>
+                </span>&nbsp;для
+                <span class=SpellE>canvas</span> 2D API есть много методов. Наиболее
+                распространённые из них перечислены ниже. <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <b style='mso-bidi-font-weight:normal'>
+                <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>Прямоугольник<span class=SpellE>canvas</span></span>
+            </b><span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>
+                <br>
+                Есть целая группа методов и функций для рисования фигур. Давайте начнем с
+                прямоугольника. Вот соответствующие функции, доступные для рисования
+                прямоугольников.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt;mso-list:l1 level1 lfo11'>
+            <![if !supportLists]><span style='font-size:18.0pt;line-height:107%;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'>
+                <span style='mso-list:Ignore'>
+                    ·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </span>
+            </span><![endif]><span class=SpellE>
+                <b style='mso-bidi-font-weight:normal'>
+                    <i style='mso-bidi-font-style:
+normal'>
+                        <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>FillRect</span>
+                    </i>
+                </b>
+            </span><b style='mso-bidi-font-weight:normal'>
+                <i style='mso-bidi-font-style:normal'>
+                    <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>(х, у, W, H)</span>
+                </i>
+            </b><span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>
+                &nbsp;— рисует прямоугольник в <span class=SpellE>Canvas</span>, используя текущий стиль заполнения.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;mso-list:l1 level1 lfo11'>
+            <![if !supportLists]><span style='font-size:18.0pt;line-height:107%;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'>
+                <span style='mso-list:Ignore'>
+                    ·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </span>
+            </span><![endif]><span class=SpellE>
+                <b style='mso-bidi-font-weight:normal'>
+                    <i style='mso-bidi-font-style:
+normal'>
+                        <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>strokeRect</span>
+                    </i>
+                </b>
+            </span><b style='mso-bidi-font-weight:normal'>
+                <i style='mso-bidi-font-style:normal'>
+                    <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>(х, у, W, H)</span>
+                </i>
+            </b><span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>
+                &nbsp;— рисует окно, которое описывает данный
+                прямоугольник в <span class=SpellE>Canvas</span>, используя текущий стиль
+                линии.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt;mso-list:l1 level1 lfo11'>
+            <![if !supportLists]><span style='font-size:18.0pt;line-height:107%;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'>
+                <span style='mso-list:Ignore'>
+                    ·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </span>
+            </span><![endif]><span class=SpellE>
+                <b style='mso-bidi-font-weight:normal'>
+                    <i style='mso-bidi-font-style:
+normal'>
+                        <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>clearRect</span>
+                    </i>
+                </b>
+            </span><b style='mso-bidi-font-weight:normal'>
+                <i style='mso-bidi-font-style:normal'>
+                    <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>(х, у, W, H)</span>
+                </i>
+            </b><span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>
+                &nbsp;— удаляет все пиксели в <span class=SpellE>Canvas</span>, прямоугольник станет прозрачный.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Чтобы нарисовать прямоугольник, самый
+                простой способ применить&nbsp;<span class=SpellE>
+                    <b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'>FillRect</i></b>
+                </span>&nbsp;и&nbsp;<span class=SpellE>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <i style='mso-bidi-font-style:
+normal'>FillStyle</i>
+                    </b>
+                </span>.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Вот как можно нарисовать черный
+                прямоугольник:<o:p></o:p>
+            </span>
+        </p>
+        <p data-height="500" data-theme-id="0" data-slug-hash="wPMXjW" data-default-tab="js,result" data-user="gabmars" data-embed-version="2" data-pen-title="new1" class="codepen">See the Pen <a href="https://codepen.io/gabmars/pen/wPMXjW/">new1</a> by gabmars (<a href="https://codepen.io/gabmars"></a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Этот код будет показывать черный
+                прямоугольник, с шириной и высотой 145 пикселей, и отступом с сверху и слева 5
+                пикселей.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Если не указывать цвет, то цвет по
+                умолчанию всегда будет черный. Чтобы нарисовать еще один прямоугольник, укажите
+                для&nbsp;<span class=SpellE>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <i style='mso-bidi-font-style:normal'>FillRect</i>
+                    </b>
+                </span>&nbsp;различные
+                параметры.&nbsp;<span class=SpellE>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <i style='mso-bidi-font-style:normal'>FillStyle</i>
+                    </b>
+                </span>&nbsp;может иметь
+                любое значение&nbsp;цвета CSS&nbsp;или прозрачность. Следующий код рисует три
+                прямоугольника <span class=SpellE>canvas</span>, разных цветов, ближний
+                полупрозрачный.<o:p></o:p>
+            </span>
+        </p>
+        <p data-height="500" data-theme-id="0" data-slug-hash="wPMXXW" data-default-tab="js,result" data-user="gabmars" data-embed-version="2" data-pen-title="new2" class="codepen">See the Pen <a href="https://codepen.io/gabmars/pen/wPMXXW/">new2</a> by gabmars (<a href="https://codepen.io/gabmars"></a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Кроме прямоугольников <span class=SpellE>canvas</span> позволяет рисовать и более сложные фигуры. Для
+                оформления сложных фигур используется концепция геометрических путей, которые
+                представляют набор линий, окружностей, прямоугольников и других более мелких
+                деталей, необходимых для построения сложной фигуры.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Для создания нового пути надо вызвать
+                метод&nbsp;<span class=SpellE>
+                    <span class=GramE>
+                        <b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'>beginPath</i></b>
+                    </span>
+                </span><span class=GramE>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <i style='mso-bidi-font-style:
+normal'>(</i>
+                    </b>
+                </span><b style='mso-bidi-font-weight:normal'>
+                    <i style='mso-bidi-font-style:normal'>)</i>
+                </b>, а после завершения пути
+                вызывается метод&nbsp;<span class=SpellE>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <i style='mso-bidi-font-style:normal'>closePath</i>
+                    </b>
+                </span><b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'>()</i></b>:<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Методы <span class=SpellE>
+                    <span class=GramE>
+                        <b style='mso-bidi-font-weight:normal'>
+                            <i style='mso-bidi-font-style:
+normal'>moveTo</i>
+                        </b>
+                    </span>
+                </span><span class=GramE>
+                    <b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'>(</i></b>
+                </span><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>)</i></b>
+                и <span class=SpellE>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <i style='mso-bidi-font-style:normal'>lineTo</i>
+                    </b>
+                </span><b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'>()</i></b><o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Для начала рисования пути нам надо
+                зафиксировать начальную точку этого пути. Это можно сделать с помощью
+                метода&nbsp;<span class=SpellE>
+                    <span class=GramE>
+                        <b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'>moveTo</i></b>
+                    </span>
+                </span><span class=GramE>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <i style='mso-bidi-font-style:
+normal'>(</i>
+                    </b>
+                </span><b style='mso-bidi-font-weight:normal'>
+                    <i style='mso-bidi-font-style:normal'>)</i>
+                </b>, который имеет следующее
+                определение:<o:p></o:p>
+            </span>
+        </p>
+        <pre class=" language-js" role="doc-example">
+        <code class="js language-js" itemprop="text"> moveTo><span class="token punctuation">(</span><span class="token string">"x, y"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Метод перемещает нас на точку с
+                координатами x и y.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Метод&nbsp;<span class=SpellE>
+                    <span class=GramE>
+                        <b style='mso-bidi-font-weight:normal'>
+                            <i style='mso-bidi-font-style:
+normal'>lineTo</i>
+                        </b>
+                    </span>
+                </span><span class=GramE>
+                    <b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'>(</i></b>
+                </span><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>)</i></b>&nbsp;рисует
+                линию. Он имеет похожее определение:<o:p></o:p>
+            </span>
+        </p>
+<pre class=" language-js" role="doc-example"><code class="js language-js" itemprop="text"> lineTo><span class="token punctuation">(</span><span class="token string">"x, y"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Метод рисует линию от текущей позиции
+                до точки с координатами x и y.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>Теперь нарисуем ряд линий:<o:p></o:p></span>
+        </p>
+        <p data-height="500" data-theme-id="0" data-slug-hash="BmjVOz" data-default-tab="js,result" data-user="gabmars" data-embed-version="2" data-pen-title="new3" class="codepen">See the Pen <a href="https://codepen.io/gabmars/pen/BmjVOz/">new3</a> by gabmars (<a href="https://codepen.io/gabmars"></a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Здесь мы устанавливаем начало пути в
+                точку (30, 20), затем от нее рисуем линию до точки (100, 80) и далее рисуем еще
+                одну линию до точки (150, 30).<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Хотя мы нарисовали несколько линий,
+                пока мы их не увидим, потому что их надо отобразить на экране. Для отображения пути
+                надо использовать метод
+            </span><span lang=EN-US style='font-size:18.0pt;
+line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;
+mso-ansi-language:EN-US'>
+                &nbsp;<span class=GramE>
+                    <b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'>stroke</i></b><b style='mso-bidi-font-weight:normal'>
+                        <i style='mso-bidi-font-style:normal'>
+                            <span lang=RU style='mso-ansi-language:RU'>(</span>
+                        </i>
+                    </b>
+                </span>
+            </span><b style='mso-bidi-font-weight:normal'>
+                <i style='mso-bidi-font-style:normal'>
+                    <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>)</span>
+                </i>
+            </b><span style='font-size:18.0pt;
+line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>:<o:p></o:p></span>
+        </p>
+        <p data-height="500" data-theme-id="0" data-slug-hash="bYEKmB" data-default-tab="js,result" data-user="gabmars" data-embed-version="2" data-pen-title="new4" class="codepen">See the Pen <a href="https://codepen.io/gabmars/pen/bYEKmB/">new4</a> by gabmars (<a href="https://codepen.io/gabmars"></a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Хотя мы нарисовали все две линии, но
+                по факту мы увидим три линии, которые оформляют треугольник. Дело в том, что
+                вызов метода&nbsp;<span class=SpellE>
+                    <span class=GramE>
+                        <b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'>context.closePath</i></b>
+                    </span>
+                </span><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>()</i></b>&nbsp;завершает
+                путь, соединяя последнюю точку с первой. И в результате образуется замкнутый контур.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Если нам не надо замыкание пути, то мы
+                можем удалить вызов метода&nbsp;<span class=SpellE>
+                    <span class=GramE>
+                        <b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>context.closePath</i></b>
+                    </span>
+                </span><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>()</i></b>:<o:p></o:p>
+            </span>
+        </p>
+        <p data-height="500" data-theme-id="0" data-slug-hash="JOGZmx" data-default-tab="js,result" data-user="gabmars" data-embed-version="2" data-pen-title="new5" class="codepen">See the Pen <a href="https://codepen.io/gabmars/pen/JOGZmx/">new5</a> by gabmars (<a href="https://codepen.io/gabmars"></a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+        <p class=MsoNormal>
+            <b style='mso-bidi-font-weight:normal'>
+                <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>Кривые Безье<o:p></o:p></span>
+            </b>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Более сложный рисунок с кривыми. Эту
+                трудную задачу можно выполнить относительно просто с помощью функции&nbsp;<span class=SpellE>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <i style='mso-bidi-font-style:
+normal'>bezierCurveTo</i>
+                    </b>
+                </span>. Эта функция указывает на текущий
+                подкаталог с помощью контрольных точек, которые представляют собой кривую <span class=SpellE>безье</span>. Параметры с&nbsp;<span class=SpellE>
+                    <b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>bezierCurveTo</i></b>
+                </span>&nbsp;ниже.<o:p></o:p>
+            </span>
+        </p>
+<pre class=" language-js" role="doc-example"><code class="js language-js" itemprop="text"> bezierCurveTo ><span class="token punctuation">(</span><span class="token string">" cp1x, cp1y, cp2x, cp2y, х, у "</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Кривые должны включать в себя три
+                пункта. Первые два пункта контроль расчетов, а третий конечная точка кривой.
+                Вот что можно создать кривыми <span class=SpellE>безье</span>.<o:p></o:p>
+            </span>
+        </p>
+        <p data-height="500" data-theme-id="0" data-slug-hash="JOGZex" data-default-tab="js,result" data-user="gabmars" data-embed-version="2" data-pen-title="new6" class="codepen">See the Pen <a href="https://codepen.io/gabmars/pen/JOGZex/">new6</a> by gabmars (<a href="https://codepen.io/gabmars"></a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+        <p data-height="500" data-theme-id="0" data-slug-hash="QOyxzg" data-default-tab="js,result" data-user="gabmars" data-embed-version="2" data-pen-title="new7" class="codepen">See the Pen <a href="https://codepen.io/gabmars/pen/QOyxzg/">new7</a> by gabmars (<a href="https://codepen.io/gabmars"></a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+        <p class=MsoNormal>
+            <b style='mso-bidi-font-weight:normal'>
+                <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>Фон в<span class=SpellE>canvas</span><o:p></o:p></span>
+            </b>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                В <span class=SpellE>canvas</span>
+                можно смешать цвета или залить фон сплошным цветом, даже сделать градиент или
+                узор. Как и в предыдущих примерах применяется&nbsp;<span class=SpellE>
+                    <b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>FillStyle</i></b>
+                </span>.
+                Эта функция заполняет фон контекста разным цветом.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Пример <span class=SpellE>canvas</span>
+                “Цвета радуги”:<o:p></o:p>
+            </span>
+        </p>
+        <p data-height="500" data-theme-id="0" data-slug-hash="WXrymO" data-default-tab="js,result" data-user="gabmars" data-embed-version="2" data-pen-title="new8" class="codepen">See the Pen <a href="https://codepen.io/gabmars/pen/WXrymO/">new8</a> by gabmars (<a href="https://codepen.io/gabmars"></a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Еще одна особенность <span class=SpellE>canvas</span>, возможность создания градиентов.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt;mso-list:l2 level1 lfo12'>
+            <![if !supportLists]><span style='font-size:18.0pt;line-height:107%;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'>
+                <span style='mso-list:Ignore'>
+                    ·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </span>
+            </span><![endif]><span class=SpellE>
+                <b style='mso-bidi-font-weight:normal'>
+                    <i style='mso-bidi-font-style:
+normal'>
+                        <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>addColorStop</span>
+                    </i>
+                </b>
+            </span><b style='mso-bidi-font-weight:normal'>
+                <i style='mso-bidi-font-style:normal'>
+                    <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>&nbsp;(смещение цвета)</span>
+                </i>
+            </b><span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>
+                добавляет остановку цвета со
+                значениями&nbsp;0.0смещением на одном конце градиента,&nbsp;1.0&nbsp;смещение
+                на противоположном конце.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;mso-list:l2 level1 lfo12'>
+            <![if !supportLists]><span style='font-size:18.0pt;line-height:107%;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'>
+                <span style='mso-list:Ignore'>
+                    ·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </span>
+            </span><![endif]><span class=SpellE>
+                <b style='mso-bidi-font-weight:normal'>
+                    <i style='mso-bidi-font-style:
+normal'>
+                        <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>createLinearGradient</span>
+                    </i>
+                </b>
+            </span><b style='mso-bidi-font-weight:normal'>
+                <i style='mso-bidi-font-style:normal'>
+                    <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>&nbsp;(x0, y0, x1, y1)</span>
+                </i>
+            </b><span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>
+                возвращает объект&nbsp;<span class=SpellE>
+                    <b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>CanvasGradient</i></b>
+                </span>,
+                который представляет собой линейный градиент, цвет по линии определяются
+                координатами.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt;mso-list:l2 level1 lfo12'>
+            <![if !supportLists]><span style='font-size:18.0pt;line-height:107%;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'>
+                <span style='mso-list:Ignore'>
+                    ·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </span>
+            </span><![endif]><span class=SpellE>
+                <b style='mso-bidi-font-weight:normal'>
+                    <i style='mso-bidi-font-style:
+normal'>
+                        <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>createRadialGradient</span>
+                    </i>
+                </b>
+            </span><b style='mso-bidi-font-weight:normal'>
+                <i style='mso-bidi-font-style:normal'>
+                    <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>&nbsp;(х0, у0, г0, x1, y1, r1)</span>
+                </i>
+            </b><span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>
+                возвращает объект&nbsp;<span class=SpellE>
+                    <b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>CanvasGradient</i></b>
+                </span>,
+                который представляет собой радиальный градиент, цвет по конусу делают круги по
+                указанным координатам.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Линейный градиент может быть создан
+                вызовом&nbsp;<span class=SpellE>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <i style='mso-bidi-font-style:normal'>createLinearGradient</i>
+                    </b>
+                </span>. Чтобы
+                добавить цвет градиента нужно вызвать&nbsp;<span class=SpellE>
+                    <b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>addColorStop</i></b>
+                </span>.
+                Вызов добавляет указанный цвет по&nbsp;х&nbsp;и&nbsp;у&nbsp;координат. В
+                следующем примере показан простой линейный градиент.<o:p></o:p>
+            </span>
+        </p>
+        <p data-height="500" data-theme-id="0" data-slug-hash="YEwvMz" data-default-tab="js,result" data-user="gabmars" data-embed-version="2" data-pen-title="new9" class="codepen">See the Pen <a href="https://codepen.io/gabmars/pen/YEwvMz/">new9</a> by gabmars (<a href="https://codepen.io/gabmars"></a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+        <p class=MsoNormal>
+            <b style='mso-bidi-font-weight:normal'>
+                <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>Изображение и видео в<span class=SpellE>canvas</span><o:p></o:p></span>
+            </b>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Главная функция для работы с
+                изображениями и видео — это&nbsp;<span class=SpellE>
+                    <b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'>DrawImage</i></b>
+                </span>.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Изображение теперь можно повернуть,
+                обесцветить,&nbsp;добавить фильтры&nbsp;и не только.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Видео в <span class=SpellE>canvas</span>
+                работает так же. Прежде всего, необходимо использовать&nbsp;<span class=SpellE>видеотег</span>
+                HTML5. Уже есть много прикрепленных функций к этому элементу. HTML5 видео
+                содержит атрибут, который определяет, будет ли браузер отображать стандартный
+                набор контроля над видео, а также цикл, который говорит браузеру, что видео
+                является рекурсивным. Внутри видео ничего нового, но, когда вы объедините
+                элемент видео с <span class=SpellE>canvas</span> можно придумать удивительные
+                вещи.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <b style='mso-bidi-font-weight:normal'>
+                <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>Преобразования и анимация<o:p></o:p></span>
+            </b>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Вот некоторые из соответствующих
+                свойств и функций для выполнения преобразования.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt;mso-list:l9 level1 lfo13'>
+            <![if !supportLists]><span style='font-size:18.0pt;line-height:107%;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'>
+                <span style='mso-list:Ignore'>
+                    ·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </span>
+            </span><![endif]><span class=SpellE>
+                <span class=GramE>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <i style='mso-bidi-font-style:normal'>
+                            <span style='font-size:18.0pt;line-height:
+107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>scale</span>
+                        </i>
+                    </b>
+                </span>
+            </span><span class=GramE>
+                <b style='mso-bidi-font-weight:normal'>
+                    <i style='mso-bidi-font-style:
+normal'>
+                        <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>(</span>
+                    </i>
+                </b>
+            </span><b style='mso-bidi-font-weight:normal'>
+                <i style='mso-bidi-font-style:normal'>
+                    <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>x, y)</span>
+                </i>
+            </b><span style='font-size:
+18.0pt;line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>
+                &nbsp;—
+                масштабное преобразование.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;mso-list:l9 level1 lfo13'>
+            <![if !supportLists]><span style='font-size:18.0pt;line-height:107%;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'>
+                <span style='mso-list:Ignore'>
+                    ·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </span>
+            </span><![endif]><span class=SpellE>
+                <b style='mso-bidi-font-weight:normal'>
+                    <i style='mso-bidi-font-style:
+normal'>
+                        <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>rotate</span>
+                    </i>
+                </b>
+            </span><b style='mso-bidi-font-weight:normal'>
+                <i style='mso-bidi-font-style:normal'>
+                    <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>(<span class=SpellE>angle</span>)</span>
+                </i>
+            </b><span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>&nbsp;— повернуть.<o:p></o:p></span>
+        </p>
+
+        <p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;mso-list:l9 level1 lfo13'>
+            <![if !supportLists]><span style='font-size:18.0pt;line-height:107%;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'>
+                <span style='mso-list:Ignore'>
+                    ·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </span>
+            </span><![endif]><span class=SpellE>
+                <span class=GramE>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <i style='mso-bidi-font-style:normal'>
+                            <span style='font-size:18.0pt;line-height:
+107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>translate</span>
+                        </i>
+                    </b>
+                </span>
+            </span><span class=GramE>
+                <b style='mso-bidi-font-weight:normal'>
+                    <i style='mso-bidi-font-style:
+normal'>
+                        <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>(</span>
+                    </i>
+                </b>
+            </span><b style='mso-bidi-font-weight:normal'>
+                <i style='mso-bidi-font-style:normal'>
+                    <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>x, y)</span>
+                </i>
+            </b><span style='font-size:
+18.0pt;line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>
+                &nbsp;—
+                положение.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;mso-list:l9 level1 lfo13'>
+            <![if !supportLists]><span style='font-size:18.0pt;line-height:107%;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'>
+                <span style='mso-list:Ignore'>
+                    ·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </span>
+            </span><![endif]><span class=SpellE>
+                <span class=GramE>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <i style='mso-bidi-font-style:normal'>
+                            <span style='font-size:18.0pt;line-height:
+107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>transform</span>
+                        </i>
+                    </b>
+                </span>
+            </span><span class=GramE>
+                <b style='mso-bidi-font-weight:normal'>
+                    <i style='mso-bidi-font-style:
+normal'>
+                        <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>(</span>
+                    </i>
+                </b>
+            </span><b style='mso-bidi-font-weight:normal'>
+                <i style='mso-bidi-font-style:normal'>
+                    <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>
+                        m11, m12, m21, m22, <span class=SpellE>dx</span>,
+                        <span class=SpellE>dy</span>)
+                    </span>
+                </i>
+            </b><span style='font-size:18.0pt;
+line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>
+                &nbsp;—
+                преобразования с аргументами.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt;mso-list:l9 level1 lfo13'>
+            <![if !supportLists]><span style='font-size:18.0pt;line-height:107%;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'>
+                <span style='mso-list:Ignore'>
+                    ·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </span>
+            </span><![endif]><span class=SpellE>
+                <span class=GramE>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <i style='mso-bidi-font-style:normal'>
+                            <span style='font-size:18.0pt;line-height:
+107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>setTransform</span>
+                        </i>
+                    </b>
+                </span>
+            </span><span class=GramE>
+                <b style='mso-bidi-font-weight:normal'>
+                    <i style='mso-bidi-font-style:
+normal'>
+                        <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>(</span>
+                    </i>
+                </b>
+            </span><b style='mso-bidi-font-weight:normal'>
+                <i style='mso-bidi-font-style:normal'>
+                    <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>
+                        m11, m12, m21, m22, <span class=SpellE>dx</span>,
+                        <span class=SpellE>dy</span>)
+                    </span>
+                </i>
+            </b><span style='font-size:18.0pt;
+line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>
+                &nbsp;—
+                новое преобразования с аргументами.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Преобразования и анимации могут
+                работать отдельно, но, если объедините их, как показано дальше, они могут
+                сделать мощные визуальные эффекты. В следующем примере демонстрируется
+                рисование прямоугольника каждые 250 миллисекунд и каждый прямоугольник поворачивается
+                для получения эффекта анимации.<o:p></o:p>
+            </span>
+        </p>
+        <p data-height="500" data-theme-id="0" data-slug-hash="qVbKww" data-default-tab="js,result" data-user="gabmars" data-embed-version="2" data-pen-title="new10" class="codepen">See the Pen <a href="https://codepen.io/gabmars/pen/qVbKww/">new10</a> by gabmars (<a href="https://codepen.io/gabmars"></a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+        <p class=MsoNormal>
+            <b style='mso-bidi-font-weight:normal'>
+                <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>Масштабировать элементы<span class=SpellE>canvas</span><o:p></o:p></span>
+            </b>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Будем придерживаться предыдущего кода
+                за исключением вращения, каждый прямоугольник будет увеличиваться каждую
+                секунду.<o:p></o:p>
+            </span>
+        </p>
+        <p data-height="500" data-theme-id="0" data-slug-hash="wPMXbg" data-default-tab="js,result" data-user="gabmars" data-embed-version="2" data-pen-title="new11" class="codepen">See the Pen <a href="https://codepen.io/gabmars/pen/wPMXbg/">new11</a> by gabmars (<a href="https://codepen.io/gabmars"></a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+        <p class=MsoNormal>
+            <b style='mso-bidi-font-weight:normal'>
+                <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'>Работа с мышью в<span class=SpellE>canvas</span><o:p></o:p></span>
+            </b>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Вы наверно уже догадались, работать с
+                мышью в <span class=SpellE>canvas</span> можно. Как и любой элемент
+                веб-страницы вы можете вернуть&nbsp;х&nbsp;и&nbsp;у&nbsp;координаты мыши
+                методами&nbsp;<span class=SpellE>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <i style='mso-bidi-font-style:normal'>pageX</i>
+                    </b>
+                </span> и&nbsp;<span class=SpellE>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <i style='mso-bidi-font-style:
+normal'>pageY</i>
+                    </b>
+                </span>.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                Кода для отслеживания курсора мыши в <span class=SpellE>canvas</span>:<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                В примере прикреплено событие захвата
+                движения мыши, поэтому, когда курсор
+                движется,&nbsp;х&nbsp;и&nbsp;у&nbsp;координаты выводятся на веб-странице.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'>
+                К <span class=SpellE>JavaScript</span>
+                можно добавить элемент <span class=SpellE>canvas</span> и добавить
+                пользовательские обработчики событий для обработки движения мыши.<o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal>
+            <span style='font-size:18.0pt;line-height:107%;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span>
+        </p>
+        <p data-height="500" data-theme-id="0" data-slug-hash="wPMXLJ" data-default-tab="js,result" data-user="gabmars" data-embed-version="2" data-pen-title="new12" class="codepen">See the Pen <a href="https://codepen.io/gabmars/pen/wPMXLJ/">new12</a> by gabmars (<a href="https://codepen.io/gabmars"></a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+    </div>
+
+</body>
+
+</html>

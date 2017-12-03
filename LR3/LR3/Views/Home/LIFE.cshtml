@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Conway's Game of Life";
+}
+<environment include="Development">
+    <link rel="stylesheet" href="~/css/life.css" />
+</environment>
+<div>
+    <canvas id="life" width="800" height="800"></canvas>
+</div>
+<div>
+    <button id="start">Begin life</button>
+    <button id="clear">Clear field</button>
+    <button id="stop">Stop life</button>
+    <span id="log">0</span>
+</div>
+<environment include="Development">
+    <script src="~/js/life.js"></script>
+</environment>
+
+
+
+

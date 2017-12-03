@@ -1,0 +1,15 @@
+﻿body {
+    margin: 0px;
+    height: 100%;
+    overflow: hidden;
+    background: -moz-radial-gradient(center, ellipse cover, #ffc578 0%, #fb9d23 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffc578), color-stop(100%, #fb9d23));
+    background: -webkit-radial-gradient(center, ellipse cover, #ffc578 0%, #fb9d23 100%);
+    background: -o-radial-gradient(center, ellipse cover, #ffc578 0%, #fb9d23 100%);
+    background: -ms-radial-gradient(center, ellipse cover, #ffc578 0%, #fb9d23 100%);
+    background: radial-gradient(ellipse at center, #ffc578 0%, #fb9d23 100%);
+}
+
+canvas {
+    height: 100%;
+}
